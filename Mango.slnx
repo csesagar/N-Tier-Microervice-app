@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Frontend/">
+    <Project Path="E:/dataconnection/Mango/Mango.Web/Mango.Web.csproj" Id="5f9b6f3a-e023-4577-a6c5-8ed43d89e1d0" />
+  </Folder>
+  <Folder Name="/Gateway/" />
+  <Folder Name="/Integration/" />
+  <Folder Name="/Services/">
+    <Project Path="E:/dataconnection/Mango/Mango.Services.CouponApi/Mango.Services.CouponApi.csproj" Id="18a322ab-e420-4e09-b0e8-b426f34c55f5" />
+    <Project Path="Mango.Services.AuthAPI/Mango.Services.AuthAPI.csproj" Id="6d182f5c-dc03-44fd-8242-282653430eb6" />
+  </Folder>
+</Solution>
