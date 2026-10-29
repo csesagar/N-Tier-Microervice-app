@@ -11,13 +11,13 @@ builder.Services.AddHttpContextAccessor();    // for http
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<ICouponService, CouponService>();    // depencency injection for services
 builder.Services.AddHttpClient<IAuthService, AuthService>();
-
+builder.Services.AddHttpClient<IProductService, ProductService>();
 SD.CouponAPIBase = builder.Configuration["ServiceUrls:CouponAPI"];    // registering different services here 
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
-
+SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 
 builder.Services.AddScoped<ITokenProvider, TokenProvider>();  // tokken management
-
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
 builder.Services.AddScoped<IAuthService, AuthService>();   // depencency injection for services
